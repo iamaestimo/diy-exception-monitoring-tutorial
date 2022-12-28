@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Games</h1>
+
+<div id="games">
+  <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Genre</th>
+      <th>Platform</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @games.each do |game| %>
+    <tr>
+      <td><%= link_to game.title, game %></td>
+      <td><%= game.genre %></td>
+      <td><%= game.platform %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>  
+</div>
+
+<%= link_to "New game", new_game_path %>
+
+
