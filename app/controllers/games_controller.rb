@@ -3,6 +3,7 @@ class GamesController < ApplicationController
 
   # GET /games or /games.json
   def index
+    # @games = Game.all
     logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
     logger.tagged("Games") do
       logger.debug "Finding all games..."

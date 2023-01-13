@@ -1,4 +1,4 @@
-20.times do 
+50.times do 
 	a= Game.create(
 		title: Faker::Game.title,
 		genre: Faker::Game.genre,
